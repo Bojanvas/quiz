@@ -66,13 +66,6 @@
     </div>
 
     <script>
-        document.onreadystatechange = function() {
-            var state = document.readyState
-            if (state == 'complete') {
-                document.getElementById('interactive');
-                document.getElementById('load').style.visibility = "hidden";
-            }
-        }
         var geography = [{
             "question": "What is the capital of Australia",
             "img": "../../img/geography/aus.jpg",
@@ -310,7 +303,12 @@
             nums.splice(u, 1);
 
         }
+
+        $(window).on("load", function() {
+            $('.loader').fadeOut();
+        });
         $(document).ready(function() {
+
             // configuring variables   
             score = 0;
             cq = 0;
