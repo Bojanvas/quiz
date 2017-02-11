@@ -222,12 +222,12 @@
                 del();
                 if (cq <= ancient.length - 1) {
                     console.log(score);
-                    $images.attr('src', ancient[cq].img);
-                    $images.on("load", function() {
-                        $('.loader').fadeIn();
+                    $images.attr('src', ancient[cq].img).on("load", function() {
+
                         $('.loader').fadeOut();
                         console.log('img loaded');
                     });
+
                     $question.text(ancient[cq].question);
                     quest();
                 } else {
