@@ -309,9 +309,9 @@
             $question = $('#questions');
             $cont = $('.question');
             $images = $("#image");
+            $images.attr('src', geography[randnum[cq]].img);
             $qe = geography[randnum[cq]].choices;
             $question.text(geography[randnum[cq]].question);
-            $images.attr('src', geography[randnum[cq]].img);
 
             quest();
             // creating qoustinos function
