@@ -53,6 +53,7 @@
                 <img id='image' src="" alt="">
 
             </div>
+            <div id="load"></div>
             <div style="display:none" class="your">
                 <h3 id='youare'></h3>
                 <img align='center' class='hero' id='hero' src="" alt="">
@@ -65,6 +66,13 @@
     </div>
 
     <script>
+        document.onreadystatechange = function() {
+            var state = document.readyState
+            if (state == 'complete') {
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility = "hidden";
+            }
+        }
         var geography = [{
             "question": "What is the capital of Australia",
             "img": "../../img/geography/aus.jpg",
