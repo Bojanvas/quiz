@@ -225,6 +225,7 @@
                     $images.attr('src', ancient[cq].img);
                     $images.on("load", function() {
                         $('.loader').fadeOut();
+                        console.log('img loaded');
                     });
                     $question.text(ancient[cq].question);
                     quest();
