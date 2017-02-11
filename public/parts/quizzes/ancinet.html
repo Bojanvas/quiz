@@ -224,6 +224,7 @@
                     console.log(score);
                     $images.attr('src', ancient[cq].img);
                     $images.on("load", function() {
+                        $('.loader').fadein();
                         $('.loader').fadeOut();
                         console.log('img loaded');
                     });
