@@ -222,11 +222,11 @@
                 del();
                 if (cq <= ancient.length - 1) {
                     console.log(score);
-                    $(window).on("load", function() {
+                    $images.attr('src', ancient[cq].img);
+                    $(document).on("load", function() {
                         $('.loader').fadeOut();
                     });
                     $question.text(ancient[cq].question);
-                    $images.attr('src', ancient[cq].img);
                     quest();
                 } else {
                     console.log('game finished your score is ' + score);
