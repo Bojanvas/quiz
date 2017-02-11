@@ -107,7 +107,7 @@
             "answer": "D"
         }, {
             "question": "Who won the battle of Thermopylae ",
-            "img": "../../img/ancient/therm.png",
+            "img": "../../img/ancient/therm.PNG",
             "choices": [
                 "Greeks",
                 "Persians"
@@ -223,7 +223,7 @@
                 if (cq <= ancient.length - 1) {
                     console.log(score);
                     $images.attr('src', ancient[cq].img);
-                    $(document).on("load", function() {
+                    $($images).on("load", function() {
                         $('.loader').fadeOut();
                     });
                     $question.text(ancient[cq].question);
