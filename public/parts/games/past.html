@@ -1,0 +1,381 @@
+<meta name="keywords" content="past, past life, quiz, bojan vasilevski, game, test , history, see how much you know about past ,personality quizes,pirate, king, queen, ares">
+<meta name="description" content="Would you like to know how you lived in your past life, you can find out now....">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+            <body>
+                <h1 class='gametit'>Who Were You In Your Past Life?</h1>
+                <div class="question" id='past'>
+                    <div class="quest" id='quest'>
+                        <h4 class='questions' id='questions'>First</h4>
+                    </div>
+                    <img id='image' src="../../img/past/roman.png" alt="">
+
+                </div>
+                <div style="display:none" class="your">
+                    <h3 id='youare'>You</h3>
+                    <img align='center' class='hero' id='hero' src="" alt="">
+                    <p id='youre'>great</p>
+                </div>
+                <div class="fb-like" data-href="http://funquiz.xyz/parts/games/past.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-comments" data-href="http://funquiz.xyz/parts/games/past.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var past = [{
+                "question": "1.  In a conflict i...?",
+                "img": "../../img/past/conn.jpg",
+                "choices": [
+                    "Enjoy the fight",
+                    "Run for my life",
+                    "Try and keep the peace"
+
+                ],
+                "value": ["nnps", "eek", "mm"]
+
+            }, {
+                "question": "2.     Do you find time for other peoples?",
+                "img": "../../img/past/time.jpg",
+                "choices": [
+                    "Sometimes",
+                    "All the time",
+                    "Occasionally",
+                    "Never!"
+                ],
+                "value": ["n", "sem", "pn", "kk"]
+            }, {
+                "question": "3.     Are you a ..",
+                "img": "../../img/past/lead.jpg",
+                "choices": [
+                    "Leader ",
+                    "Thinker",
+                    "Peacekeeper",
+                    "Fighter"
+
+                ],
+                "value": ["kn", "ms", "em", "nps"]
+            }, {
+                "question": "4.    Pick a hobby?",
+                "img": "../../img/past/spor.jpg",
+                "choices": [
+                    "Yoga",
+                    "Sports",
+                    "Partying",
+                    "Reading",
+                    "Pets"
+                ],
+                "value": ["pn", "e", "kpp", "mm", "mek"]
+            }, {
+                "question": "5.     what is your opinion on religion?",
+                "img": "../../img/past/rel.jpg",
+                "choices": [
+                    "It can give wrong people power",
+                    "It is a way of life",
+                    "It does a lot of good",
+                    "I dont care"
+                ],
+                "value": ["ns", "ek", "em", "p"]
+            }, {
+                "question": "6.     At parties i`m...?",
+                "img": "../../img/past/part.jpg",
+                "choices": [
+                    "I don`t party",
+                    "Sitting and chilling",
+                    "Too drunk to remember",
+                    "The life of the party"
+                ],
+                "value": ["em", "ns", "kk", "pp"]
+            }, {
+                "question": "7.     I enjoy traveling?",
+                "img": "../../img/past/tra.jpg",
+                "choices": [
+                    "Not so much ",
+                    "A little",
+                    "Sometimes when i have more time",
+                    "Yes, and i travel a lot"
+                ],
+                "value": ["eem", "ms", "kn", "pn"]
+            }, {
+                "question": "8.     Where do you whant to live?",
+                "img": "../../img/past/hous.jpg",
+                "choices": [
+                    "Big City",
+                    "Island",
+                    "Castle",
+                    "countryside",
+                    "jungle"
+                ],
+                "value": ["kess", "pp", "knn", "mm", "m"]
+            }, {
+                "question": "9.    What do you value above all?",
+                "img": "../../img/past/val.jpg",
+                "choices": [
+                    "Truth",
+                    "Love",
+                    "Power",
+                    "Wealth"
+                ],
+                "value": ["mmn", "enmp", "kks", "ppn"]
+            }, {
+                "question": "10.    how you are dealing whit Wealth and Money?",
+                "img": "../../img/past/wea.jpg",
+                "choices": [
+                    "Earn it",
+                    "Take it",
+                    "Leave it",
+                    "Share it"
+                ],
+                "value": ["nns", "skkpp", "ee", "mm"]
+            }
+
+        ]
+        var winner = [{
+                "title": "King/Queen",
+                "img": "../../img/past/king.jpg",
+                "txt": "Your personality reveals  that you were wise and powerful King in you past life.You ruled over small kingdom in central Europe , you were well  loved by you`r people and much respected even by you`rs greatest enemies,You died peacefully in you bed , you were 70 years old."
+            }, {
+                "title": "Pirate",
+                "img": "../../img/past/pirate.png",
+                "txt": "Your personality reveals  that you were smart ,strong,determined and lustful Pirate in you past life.You enjoiyed taking risks in you life living on the edge,you were  adventurous but that did take it price you died in prison on small island you were 34 years old."
+            }, {
+                "title": "Pesant in Victorian England",
+                "img": "../../img/past/pes.jpg",
+                "txt": "Your personality reveals  that you were hard-working ,insecure,weak and submissive Peasant in you past life.You lived in 7th century in Europe, you had a hard life you didn't accomplished anything, you died in you 40s because of hard labour."
+            }, {
+                "title": "Knight",
+                "img": "../../img/past/kn.jpg",
+                "txt": "You were a Knight in your past life! Your personality reveals a strength and fighting spirit that few can match.You have done many great things in you glorious life seen many new places fight many holy wars for you country, you lived till your 50s died in fight for your country. "
+            }, {
+                "title": "Serial-killer",
+                "img": "../../img/past/sk.jpg",
+                "txt": "You were a serial-killer in your past life! Your personality reveals  intelligent,quick thinking person but also a sadist who enjoy killing people,you lived in England in 18th century ,they never found what you did , you died in your bed in your`s 60s."
+            }, {
+                "title": "Monk",
+                "img": "../../img/past/monk.jpg",
+                "txt": "You were a monk in your past life! Your personality reveals  intelligent,spiritual,calm person, you lived in Tibet in 17th century, you practiced peaceful life and you were a great teacher to other people, you died in you 80s."
+            }
+
+
+        ]
+        var cq = 0;
+        var score = 0;
+
+        //end of past
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+
+            $qe = past.question;
+            /*    
+               
+
+                            $an1.text(past[cq].choices[0]);
+               $an2.text(past[cq].choices[1]);
+               $an3.text(past[cq].choices[2]);
+               $an4.text(past[cq].choices[3]);
+
+
+
+
+               // end oof config */
+            $quests = past[cq].choices;
+            newq();
+
+            function newq() {
+                $quests = past[cq].choices;
+                for (var d = 0; d < $quests.length; d++) {
+                    $div = $("<div class = 'an'></div>").text($quests[d]).addClass('answer' + [d + 1]).attr('value', past[cq].value[d]);
+                    $('.question').append($div);
+
+
+                }
+            }
+
+            var del = function() {
+                $(".an").remove();
+            }
+            $img = $('#image');
+
+            score = 0;
+            $answers = [];
+            var newarr = [];
+
+            $quest.text(past[cq].question);
+            $img.attr('src', past[cq].img);
+
+
+            // first answers
+
+            //adding attributes 
+
+
+
+
+
+            $(document.body).on('click', '.an', function(e) {
+                $target = $(e.target).attr('value');
+                $answers.push($target);
+
+                console.log($answers);
+                cq++;
+                del();
+                if (cq <= past.length - 1) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 60
+                    });
+                    $quest.text(past[cq].question);
+                    $img.attr('src', past[cq].img);
+                    newq();
+
+                } else {
+                    $('html,body').animate({
+                        scrollTop: 60
+                    });
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    console.log('game end');
+                    sort($answers);
+
+                    cq = 0;
+
+                }
+
+                function checkans(arr) {
+
+                    var answer = arr.sort((a, b) =>
+                        arr.filter(v => v === a).length -
+                        arr.filter(v => v === b).length
+                    ).pop();
+                    console.log(answer);
+
+                    switch (answer) {
+                        case "k":
+                            $('#youare').text(winner[0].title);
+                            $('#hero').attr('src', winner[0].img);
+                            $('#youre').text(winner[0].txt);
+                            break;
+                        case "p":
+                            $('#youare').text(winner[1].title);
+                            $('#hero').attr('src', winner[1].img);
+                            $('#youre').text(winner[1].txt);
+                            break;
+                        case "e":
+                            $('#youare').text(winner[2].title);
+                            $('#hero').attr('src', winner[2].img);
+                            $('#youre').text(winner[2].txt);
+                            break;
+                        case "n":
+                            $('#youare').text(winner[3].title);
+                            $('#hero').attr('src', winner[3].img);
+                            $('#youre').text(winner[3].txt);
+                            break;
+                        case "s":
+                            $('#youare').text(winner[4].title);
+                            $('#hero').attr('src', winner[4].img);
+                            $('#youre').text(winner[4].txt);
+                            break;
+                        case "m":
+                            $('#youare').text(winner[5].title);
+                            $('#hero').attr('src', winner[5].img);
+                            $('#youre').text(winner[5].txt);
+                            break;
+
+                    }
+                }
+
+
+                function sort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        if (arr[i].length > 1) {
+                            arr[i] = arr[i].split("");
+                            var newarr = arr.reduce(function(a, b) {
+                                return a.concat(b);
+                            }, []);
+
+
+                        }
+                    }
+                    checkans(newarr);
+                    return newarr;
+
+
+                };
+
+
+
+            });
+
+
+
+        })
+
+        //end of past quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>

@@ -1,0 +1,377 @@
+<meta name="keywords" content="gods, greek gods knowledge, quiz, bojan vasilevski, game, test , history, see how much you know about gods ,personality quizes,greek gods, zeus, posidon, ares">
+<meta name="description" content="Which Greek God Are You? Zeus,Hera,Ares Find out now!!">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+            <body>
+                <h1 class='gametit'>Which Greek God Are You?</h1>
+                <div class="question" id='gods'>
+                    <div class="quest" id='quest'>
+                        <h4 class='questions' id='questions'>First</h4>
+                    </div>
+                    <img id='image' src="../../img/gods/roman.png" alt="">
+
+                </div>
+                <div style="display:none" class="your">
+                    <h3 id='youare'>You</h3>
+                    <img align='center' class='hero' id='hero' src="" alt="">
+                    <p id='youre'></p>
+
+                </div>
+                <div class="fb-like" data-href="http://bojanvasilevski.com" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-comments" data-href="https://bojanvasilevski.com" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var gods = [{
+                "question": "1. Choose your favorite animal",
+                "img": "../../img/gods/fox.jpg",
+                "choices": [
+                    "Lion",
+                    "Wolf",
+                    "Eagle",
+                    "Dolphin",
+                    "Fox"
+
+                ],
+                "value": ["zm", "ar", "dh", "pr", "h"]
+
+            }, {
+                "question": "2.     How whould you spend your ideal day out?",
+                "img": "../../img/gods/be.jpg",
+                "choices": [
+                    "Shoping",
+                    "At a museum",
+                    "Whit family",
+                    "Whit friends",
+                    "At the beach"
+                ],
+                "value": ["harm", "hdaa", "zh", "zr", "pp"]
+            }, {
+                "question": "3.     What word discrabes you the best",
+                "img": "../../img/gods/pow.jpg",
+                "choices": [
+                    "Powerful",
+                    "Loyal",
+                    "Angry",
+                    "Logical",
+                    "Seductive",
+                    "Cunning"
+
+                ],
+                "value": ["zam", "adr", "phm", "ahd", "hh", "mzpd"]
+            }, {
+                "question": "4.   Which is favorite sport of these",
+                "img": "../../img/gods/wre.jpg",
+                "choices": [
+                    "Wrestling",
+                    "Horse racing",
+                    "Archery",
+                    "Boxing",
+                    "Football"
+                ],
+                "value": ["zz", "dr", "aa", "mm", "ph"]
+            }, {
+                "question": "5.     Which occcupation do you prefer?",
+                "img": "../../img/gods/job.jpg",
+                "choices": [
+                    "Musician",
+                    "Ship Capitan",
+                    "Fashion model",
+                    "Lawyer",
+                    "Professor"
+                ],
+                "value": ["drr", "ppz", "mdr", "hz", "ar"]
+            }, {
+                "question": "6.     What`s your weapson of choice?",
+                "img": "../../img/gods/sw.jpg",
+                "choices": [
+                    "Trident",
+                    "Lighting bolt",
+                    "Staff",
+                    "Bow and Arrow",
+                    "Sword",
+                    "Shield"
+                ],
+                "value": ["pp", "zz", "hh", "aa", "mm", "ddrr"]
+            }, {
+                "question": "7.     Are you a male or female?",
+                "img": "../../img/gods/patri.jpg",
+                "choices": [
+                    "Male",
+                    "Female"
+                ],
+                "value": ["zzppmm", "hhaaddrr"]
+            }, {
+                "question": "8.     What we do in this life echoes in eternity.What whould you rather be remembered for?",
+                "img": "../../img/gods/mil.jpg",
+                "choices": [
+                    "My good looks",
+                    "My care for others",
+                    "My creativity",
+                    "My power",
+                    "My wisdom"
+                ],
+                "value": ["mh", "ar", "d", "zp", "zha"]
+            }
+
+        ]
+        var winner = [{
+                "title": "Zeus",
+                "img": "../../img/gods/zeus.jpg",
+                "txt": "In the old days, Zeus ruled over his unruly family of Olympians while they bickered and fought and got jealous of each other. Not much different than today, really. Zeus always had an eye for beautiful women, which often got him in trouble with his wife, Hera. A less-than-stellar father figure, Zeus once tossed Hera’s son Hephaestus off the top of Mount Olympus because the baby was too ugly."
+            }, {
+                "title": "Hera",
+                "img": "../../img/gods/hera.jpg",
+                "txt": "It’s tough to be the goddess of marriage in a family where everyone cheats on everybody. Hera has no patience with demigods, the children of godly affairs. She was the enemy of Heracles and many others, though she did have a soft spot for mortal heroes, like Jason. If an old woman asks you to carry her piggyback across a river, do it. You might win the favor of a goddess!"
+            }, {
+                "title": "Poseidon",
+                "img": "../../img/gods/pos.jpg",
+                "txt": "Poseidon was always a moody guy. On his good days, he did cool stuff like create horses out of sea foam. On his bad days, he caused minor problems like destroying cities with earthquakes or sinking entire fleets of ships. But hey, a god has the right to throw a temper tantrum, doesn’t he?"
+            }, {
+                "title": "Athena",
+                "img": "../../img/gods/ath.jpg",
+                "txt": "Athena was one of the most active goddesses in human affairs. She helped out Odysseus, sponsored the entire city of Athens and made sure the Greeks won the Trojan War. On the downside, she’s proud and has a big temper. Just ask Arachne, who got turned into a spider for daring to compare her weaving skills to Athena’s. So whatever you do, DO NOT claim that you fix toilets better than Athena. There’s no telling what she’ll turn you into."
+            }, {
+                "title": "Demeter",
+                "img": "../../img/gods/dem.png",
+                "txt": "Demeter was one of the quieter goddess. As long as the crops were growing and the farmers were happy, Demeter was content. But don’t underestimate her importance. If you wanted to eat, you had to make sure you kept on Demeter’s good side. When Hades stole her daughter Persephone, Demeter stopped all plants from growing, and people started starving. Hard to make a cheeseburger with no grain for bread and no grass for the cows."
+            }, {
+                "title": "Ares",
+                "img": "../../img/gods/ares.jpg",
+                "txt": "Back in the day, this son of Zeus and Hera used to be inseparable from his shield and helmet. Fought on the side of the Trojans during the war of Troy, but, frankly, has been involved in every minor skirmish since Goldilocks told the three bears that their beds were a little uncomfy. "
+            }, {
+                "title": "Artemis",
+                "img": "../../img/gods/art.jpg",
+                "txt": "Artemis enjoyed hunting with her handmaidens and basically kept to herself unless she was bothered. Once a male hunter tried to spy on Artemis while she was bathing. The goddess turned him into a deer and her hunters tracked him down and killed him. Basically, she doesn’t have much of a sense of humor when it comes to peeping toms."
+            }
+
+
+        ]
+        var cq = 0;
+        var score = 0;
+
+        //end of gods
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+
+            $qe = gods.question;
+            /*    
+               
+
+                            $an1.text(gods[cq].choices[0]);
+               $an2.text(gods[cq].choices[1]);
+               $an3.text(gods[cq].choices[2]);
+               $an4.text(gods[cq].choices[3]);
+
+
+
+
+               // end oof config */
+            $quests = gods[cq].choices;
+            newq();
+
+            function newq() {
+                $quests = gods[cq].choices;
+                for (var d = 0; d < $quests.length; d++) {
+                    $div = $("<div class = 'an'></div>").text($quests[d]).addClass('answer' + [d + 1]).attr('value', gods[cq].value[d]);
+                    $('.question').append($div);
+
+
+                }
+            }
+
+            var del = function() {
+                $(".an").remove();
+            }
+            $img = $('#image');
+
+            score = 0;
+            $answers = [];
+            var newarr = [];
+
+            $quest.text(gods[cq].question);
+            $img.attr('src', gods[cq].img);
+
+
+            // first answers
+
+            //adding attributes 
+
+
+
+
+
+            $(document.body).on('click', '.an', function(e) {
+                $target = $(e.target).attr('value');
+                $answers.push($target);
+
+                console.log($answers);
+                cq++;
+                del();
+                if (cq <= gods.length - 1) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 60
+                    });
+                    $quest.text(gods[cq].question);
+                    $img.attr('src', gods[cq].img);
+                    newq();
+
+                } else {
+                    $('html,body').animate({
+                        scrollTop: 60
+                    });
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    console.log('game end');
+                    sort($answers);
+
+                    cq = 0;
+
+                }
+
+                function checkans(arr) {
+
+                    var answer = arr.sort((a, b) =>
+                        arr.filter(v => v === a).length -
+                        arr.filter(v => v === b).length
+                    ).pop();
+                    console.log(answer);
+
+                    switch (answer) {
+                        case "z":
+                            $('#youare').text(winner[0].title);
+                            $('#hero').attr('src', winner[0].img);
+                            $('#youre').text(winner[0].txt);
+                            break;
+                        case "h":
+                            $('#youare').text(winner[1].title);
+                            $('#hero').attr('src', winner[1].img);
+                            $('#youre').text(winner[1].txt);
+                            break;
+                        case "p":
+                            $('#youare').text(winner[2].title);
+                            $('#hero').attr('src', winner[2].img);
+                            $('#youre').text(winner[2].txt);
+                            break;
+                        case "a":
+                            $('#youare').text(winner[3].title);
+                            $('#hero').attr('src', winner[3].img);
+                            $('#youre').text(winner[3].txt);
+                            break;
+                        case "d":
+                            $('#youare').text(winner[4].title);
+                            $('#hero').attr('src', winner[4].img);
+                            $('#youre').text(winner[4].txt);
+                            break;
+                        case "m":
+                            $('#youare').text(winner[5].title);
+                            $('#hero').attr('src', winner[5].img);
+                            $('#youre').text(winner[5].txt);
+                            break;
+                        case "r":
+                            $('#youare').text(winner[6].title);
+                            $('#hero').attr('src', winner[6].img);
+                            $('#youre').text(winner[6].txt);
+                            break;
+
+                    }
+                }
+
+
+                function sort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        if (arr[i].length > 1) {
+                            arr[i] = arr[i].split("");
+                            var newarr = arr.reduce(function(a, b) {
+                                return a.concat(b);
+                            }, []);
+
+
+                        }
+                    }
+                    checkans(newarr);
+                    return newarr;
+
+
+                };
+
+
+
+            });
+
+
+
+        })
+
+        //end of gods quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>

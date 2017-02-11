@@ -1,0 +1,379 @@
+<meta name="keywords" content="Castro, Communism, Democrats, bojan vasilevski, game, test , far-right, ideology,personality quizes, politic, leaders">
+<meta name="description" content="What Is Your Political Ideology? Left or Right? Find out now!!">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+            <body>
+                <h1 class='gametit'>What Is Your Political Ideology?</h1>
+                <div class="question" id='ideology'>
+                    <div class="quest" id='quest'>
+                        <h4 class='questions' id='questions'>First</h4>
+                    </div>
+                    <img id='image' src="../../img/ideology/roman.png" alt="">
+
+                </div>
+                <div style="display:none" class="your">
+                    <h3 id='youare'>You</h3>
+                    <img align='center' class='hero' id='hero' src="" alt="">
+                    <p id='youre'></p>
+                </div>
+                <div class="fb-like" data-href="http://funquiz.xyz/parts/games/ideology.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-comments" data-href="http://funquiz.xyz/parts/games/ideology.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var ideology = [{
+                "question": "1.  If people vote to persecute a minority,should this be allowed??",
+                "img": "../../img/ideology/gov.jpg",
+                "choices": [
+                    "if the majority decides then is right",
+                    "No! Human rights above all else",
+                    "Only if it mild persecution",
+                    "No! people cant make that kind of decision"
+
+                ],
+                "value": ["f", "las", "o", "cs"]
+
+            }, {
+                "question": "2.     should gay marriage be legal?",
+                "img": "../../img/ideology/gy.jpg",
+                "choices": [
+                    "No! only only acceptable marriage is between man and woman",
+                    "Yes, and to adpot, there should be no discirmination on the basis",
+                    "Gays have no place in a society",
+                    "Goverment has no right to regulate marriages"
+                ],
+                "value": ["oof", "cs", "fff", "al"]
+            }, {
+                "question": "3.     What do you believe is the primary purpose of goverment?",
+                "img": "../../img/ideology/purp.png",
+                "choices": [
+                    "To protect cultural and national identity ",
+                    "Help the poor and protect the soical equality",
+                    "To carry out the will of the people",
+                    "Control all segments of the society and ensure benefits for all",
+                    "No need for govermment.People can take care of themselves",
+                    "To improve quality of life and ensure freedom"
+                ],
+                "value": ["lfo", "csl", "ol", "ccs", "aa", "lls"]
+            }, {
+                "question": "4.    Should there be a death penalty?",
+                "img": "../../img/ideology/de.jpg",
+                "choices": [
+                    "Yes, but only for serious criminals",
+                    "Yes, but for traitors nad enemies of society",
+                    "No life is sacred"
+                ],
+                "value": ["cafo", "ffos", "ls"]
+            }, {
+                "question": "5.     what is your opinion on abortion??",
+                "img": "../../img/ideology/ab.jpg",
+                "choices": [
+                    "Pro-choice",
+                    "Pro-life",
+                    "Not sure / in between"
+                ],
+                "value": ["las", "of", "c"]
+            }, {
+                "question": "6.     Should the government transfer money from rich to poor?",
+                "img": "../../img/ideology/rich.jpg",
+                "choices": [
+                    "No, i`m against that ",
+                    "The rich should pay higher taxes",
+                    "There should be no government intervention in the economy",
+                    "The money should be controled by the government to ensure everyone gets share they did deserve",
+                    "The rich should be more taxed and the money given to the  poor"
+                ],
+                "value": ["fo", "ls", "al", "ccs", "ssla"]
+            }, {
+                "question": "7.     Should the government take action if majority disagree?",
+                "img": "../../img/ideology/maj.jpg",
+                "choices": [
+                    "No, the people are the authority ",
+                    "Yes, if the government thinks is for the good of the people",
+                    "Yes, if is mandated by court to protect human rights",
+                    "Yes, if experts thinks it is good for the people"
+                ],
+                "value": ["aal", "csf", "os", "ol"]
+            }, {
+                "question": "8.     Univeral health care?",
+                "img": "../../img/ideology/health.jpg",
+                "choices": [
+                    "All health care should be free and provided by the government",
+                    "No there shouldnt be universal health care, only Private health care",
+                    "There should be health care insurence system to ensure all citizens can afford care when need it"
+                ],
+                "value": ["ccsla", "fo", "fos"]
+            }, {
+                "question": "9.    Should the rights of individuals be sacrificed for the good of society?",
+                "img": "../../img/ideology/soc.jpg",
+                "choices": [
+                    "Usually society comes first , but individuals rights are important too",
+                    "Society comes first",
+                    "The individual rights are more important",
+                    "Mostly the individual comes first but society is also important"
+                ],
+                "value": ["of", "ffc", "als", "cos"]
+            }, {
+                "question": "10.    Is Religion important in society?",
+                "img": "../../img/ideology/rel.jpg",
+                "choices": [
+                    "Religion is important and therefore the state should protect and engorce it",
+                    "Religion is important but freedom of religions is also important",
+                    "Religions are untrue and harmful , and should be attacked by the state",
+                    "If most of people in the country are religous the the state should be religous too"
+                ],
+                "value": ["oof", "ls", "aacc", "fo"]
+            }
+
+        ]
+        var winner = [{
+                "title": "Communist",
+                "img": "../../img/ideology/com.jpg",
+                "txt": "Communism includes a variety of schools of thought, which broadly include Marxism, anarchism (anarchist communism), and the political ideologies grouped around both. All these share the analysis that the current order of society stems from its economic system, capitalism, that in this system, there are two major social classes: the working class—who must work to survive, and who make up the majority within society—and the capitalist class—a minority who derives profit from employing the working class, through private ownership of the means of production, and that conflict between these two classes will trigger a revolution. The primary element which will enable this transformation, according to this analysis, is the social ownership of the means of production."
+            }, {
+                "title": "Socialist",
+                "img": "../../img/ideology/soca.jpg",
+                "txt": "Socialism is a range of economic and social systems characterised by social ownership and democratic control of the means of production; as well as the political ideologies, theories, and movements that aim to establish them. Social ownership may refer to forms of public, collective, or cooperative ownership; to citizen ownership of equity; or to any combination of these. Although there are many varieties of socialism and there is no single definition encapsulating all of them, social ownership is the common element shared by its various forms"
+            }, {
+                "title": "Anarchist",
+                "img": "../../img/ideology/ana.png",
+                "txt": "Anarchism is a political philosophy that advocates self-governed societies based on voluntary institutions. These are often described as stateless societies, although several authors have defined them more specifically as institutions based on non-hierarchical free associations. Anarchism holds the state to be undesirable, unnecessary, and harmful. While anti-statism is central,anarchism entails opposing authority or hierarchical organization in the conduct of all human relations, including, but not limited to, the state system"
+            }, {
+                "title": "Liberal",
+                "img": "../../img/ideology/lib.jpg",
+                "txt": "Liberalism is a political philosophy or worldview founded on ideas of liberty and equality. Whereas classical liberalism emphasises the role of liberty, social liberalism stresses the importance of equality. Liberals espouse a wide array of views depending on their understanding of these principles, but generally they support ideas and programmes such as freedom of speech, freedom of the press, freedom of religion, free markets, civil rights, democratic societies, secular governments, gender equality, and international cooperation."
+            }, {
+                "title": "Far-right",
+                "img": "../../img/ideology/nazi.png",
+                "txt": " Far-right politics are right-wing politics further on the right of the left-right spectrum than the standard political right.Far-right politics often involve a focus on tradition, real or imagined, as opposed to policies and customs that are regarded as reflective of modernism. Many far-right ideologies have a disregard or a disdain for egalitarianism, even if they do not always express overt support for social hierarchy, elements of social conservatism and opposition to most forms of liberalism and socialism."
+            }, {
+                "title": "Conservative",
+                "img": "../../img/ideology/conn.jpg",
+                "txt": "Conservatism as a political and social philosophy promotes retaining traditional social institutions in the context of culture and civilization. Conservatives seek to preserve institutions like the Church, monarchy and the social hierarchy, as they are, emphasizing stability and continuity, while others, called reactionaries, oppose modernism and seek a return to 'the way things were'. "
+            }
+
+
+        ]
+        var cq = 0;
+        var score = 0;
+
+        //end of ideology
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+
+            $qe = ideology.question;
+            /*    
+               
+
+                            $an1.text(ideology[cq].choices[0]);
+               $an2.text(ideology[cq].choices[1]);
+               $an3.text(ideology[cq].choices[2]);
+               $an4.text(ideology[cq].choices[3]);
+
+
+
+
+               // end oof config */
+            $quests = ideology[cq].choices;
+            newq();
+
+            function newq() {
+                $quests = ideology[cq].choices;
+                for (var d = 0; d < $quests.length; d++) {
+                    $div = $("<div class = 'an'></div>").text($quests[d]).addClass('answer' + [d + 1]).attr('value', ideology[cq].value[d]);
+                    $('.question').append($div);
+
+
+                }
+            }
+
+            var del = function() {
+                $(".an").remove();
+            }
+            $img = $('#image');
+
+            score = 0;
+            $answers = [];
+            var newarr = [];
+
+            $quest.text(ideology[cq].question);
+            $img.attr('src', ideology[cq].img);
+
+
+            // first answers
+
+            //adding attributes 
+
+
+
+
+
+            $(document.body).on('click', '.an', function(e) {
+                $target = $(e.target).attr('value');
+                $answers.push($target);
+
+                console.log($answers);
+                cq++;
+                del();
+                if (cq <= ideology.length - 1) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 60
+                    });
+                    $quest.text(ideology[cq].question);
+                    $img.attr('src', ideology[cq].img);
+                    newq();
+
+                } else {
+                    $('html,body').animate({
+                        scrollTop: 60
+                    });
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    console.log('game end');
+                    sort($answers);
+
+                    cq = 0;
+
+                }
+
+                function checkans(arr) {
+
+                    var answer = arr.sort((a, b) =>
+                        arr.filter(v => v === a).length -
+                        arr.filter(v => v === b).length
+                    ).pop();
+                    console.log(answer);
+
+                    switch (answer) {
+                        case "c":
+                            $('#youare').text(winner[0].title);
+                            $('#hero').attr('src', winner[0].img);
+                            $('#youre').text(winner[0].txt);
+                            break;
+                        case "s":
+                            $('#youare').text(winner[1].title);
+                            $('#hero').attr('src', winner[1].img);
+                            $('#youre').text(winner[1].txt);
+                            break;
+                        case "a":
+                            $('#youare').text(winner[2].title);
+                            $('#hero').attr('src', winner[2].img);
+                            $('#youre').text(winner[2].txt);
+                            break;
+                        case "l":
+                            $('#youare').text(winner[3].title);
+                            $('#hero').attr('src', winner[3].img);
+                            $('#youre').text(winner[3].txt);
+                            break;
+                        case "f":
+                            $('#youare').text(winner[4].title);
+                            $('#hero').attr('src', winner[4].img);
+                            $('#youre').text(winner[4].txt);
+                            break;
+                        case "o":
+                            $('#youare').text(winner[5].title);
+                            $('#hero').attr('src', winner[5].img);
+                            $('#youre').text(winner[5].txt);
+                            break;
+
+                    }
+                }
+
+
+                function sort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        if (arr[i].length > 1) {
+                            arr[i] = arr[i].split("");
+                            var newarr = arr.reduce(function(a, b) {
+                                return a.concat(b);
+                            }, []);
+
+
+                        }
+                    }
+                    checkans(newarr);
+                    return newarr;
+
+
+                };
+
+
+
+            });
+
+
+
+        })
+
+        //end of ideology quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>

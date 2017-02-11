@@ -1,0 +1,376 @@
+<meta name="keywords" content="Castro, Obama, quiz, bojan vasilevski, game, test , putin, see how much you know about gods ,personality quizes, politic, leaders">
+<meta name="description" content="What Famous Politician Are You? Find out now!!">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+            <body>
+                <h1 class='gametit'>What Famous Politician Are You?</h1>
+                <div class="question" id='politic'>
+                    <div class="quest" id='quest'>
+                        <h4 class='questions' id='questions'>First</h4>
+                    </div>
+                    <img id='image' src="../../img/politic/roman.png" alt="">
+
+                </div>
+                <div style="display:none" class="your">
+                    <h3 id='youare'>You</h3>
+                    <img align='center' class='hero' id='hero' src="" alt="">
+
+                </div>
+                <div class="fb-like" data-href="http://funquiz.xyz/parts/games/politic.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-comments" data-href="http://funquiz.xyz/parts/games/politic.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var politic = [{
+                "question": "1.  You will be most proud of whit what accomplishment?",
+                "img": "../../img/politic/rev.jpg",
+                "choices": [
+                    "Revolution",
+                    "Economic Reforms",
+                    "Resolving large conflict",
+                    "Conquering other nations",
+                    "Being a spiritual inspiration to millions"
+
+                ],
+                "value": ["ffshnn", "oope", "senpo", "hhos", "nnf"]
+
+            }, {
+                "question": "2.     You belive in ..?",
+                "img": "../../img/politic/mo.jpg",
+                "choices": [
+                    "Tax cuts for the rich, to stimulate the economy",
+                    "Higher taxes for the rich, so you will have money for soical programmes",
+                    "Taking all earnings and redistriubting them equitably",
+                    "Everyone should pay the same amount of taxes"
+                ],
+                "value": ["oee", "hnsf", "ssh", "opn"]
+            }, {
+                "question": "3.     Are you a ..",
+                "img": "../../img/politic/che.jpg",
+                "choices": [
+                    "Leader ",
+                    "Thinker",
+                    "Peacekeeper",
+                    "Fighter"
+
+                ],
+                "value": ["sh", "pn", "on", "ef"]
+            }, {
+                "question": "4.    Most important leadership quality",
+                "img": "../../img/politic/fidel.jpg",
+                "choices": [
+                    "Ability to inspire",
+                    "Unique and independent",
+                    "Streinght",
+                    "Understanding of human suffering",
+                    "Sense of humor "
+                ],
+                "value": ["phfn", "os", "hse", "nnof", "fo"]
+            }, {
+                "question": "5.     Are you religious person?",
+                "img": "../../img/politic/rel.jpg",
+                "choices": [
+                    "Yes",
+                    "A little bit",
+                    "No!"
+                ],
+                "value": ["neph", "o", "sf"]
+            }, {
+                "question": "6.     How do you spend your free time?",
+                "img": "../../img/politic/pro.jpg",
+                "choices": [
+                    "Reading",
+                    "Pray or meditate",
+                    "Travel somewhere",
+                    "Going to Protests"
+                ],
+                "value": ["fep", "npe", "op", "hn"]
+            }, {
+                "question": "7.     Is patriotism important to you?",
+                "img": "../../img/politic/patri.jpg",
+                "choices": [
+                    "Not so much ",
+                    "A little",
+                    "Yes"
+                ],
+                "value": ["on", "efps", "hhp"]
+            }, {
+                "question": "8.     Whould you use military force to achive your goals?",
+                "img": "../../img/politic/mil.jpg",
+                "choices": [
+                    "YES!!",
+                    "NO!!"
+                ],
+                "value": ["hspfoe", "nn"]
+            }, {
+                "question": "9.    What do you value above all?",
+                "img": "../../img/politic/powe.jpg",
+                "choices": [
+                    "Truth",
+                    "Love",
+                    "Power",
+                    "Wealth",
+                    "Adventrue",
+                    "Changing the World"
+                ],
+                "value": ["nf", "nn", "sshh", "eepo", "ef", "ffop"]
+            }, {
+                "question": "10.    how you are dealing whit Wealth and Money?",
+                "img": "../../img/politic/money.jpg",
+                "choices": [
+                    "Earn it",
+                    "Take it",
+                    "Leave it",
+                    "Share it"
+                ],
+                "value": ["npo", "she", "nn", "fn"]
+            }
+
+        ]
+        var winner = [{
+                "title": "Vladimir Putin",
+                "img": "../../img/politic/putin.jpg"
+            }, {
+                "title": "Barack Obama",
+                "img": "../../img/politic/obama.jpg"
+            }, {
+                "title": "Fidel Castro",
+                "img": "../../img/politic/fideln.jpg"
+            }, {
+                "title": "Nelson Mandela",
+                "img": "../../img/politic/nelson.jpg"
+            }, {
+                "title": "Elizabeth I",
+                "img": "../../img/politic/eli.jpg"
+            }, {
+                "title": "Adolf Hitler",
+                "img": "../../img/politic/adolf.jpg"
+            }, {
+                "title": "Joseph Stalin",
+                "img": "../../img/politic/stalin.jpg"
+            }
+
+
+        ]
+        var cq = 0;
+        var score = 0;
+
+        //end of politic
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+
+            $qe = politic.question;
+            /*    
+               
+
+                            $an1.text(politic[cq].choices[0]);
+               $an2.text(politic[cq].choices[1]);
+               $an3.text(politic[cq].choices[2]);
+               $an4.text(politic[cq].choices[3]);
+
+
+
+
+               // end oof config */
+            $quests = politic[cq].choices;
+            newq();
+
+            function newq() {
+                $quests = politic[cq].choices;
+                for (var d = 0; d < $quests.length; d++) {
+                    $div = $("<div class = 'an'></div>").text($quests[d]).addClass('answer' + [d + 1]).attr('value', politic[cq].value[d]);
+                    $('.question').append($div);
+
+
+                }
+            }
+
+            var del = function() {
+                $(".an").remove();
+            }
+            $img = $('#image');
+
+            score = 0;
+            $answers = [];
+            var newarr = [];
+
+            $quest.text(politic[cq].question);
+            $img.attr('src', politic[cq].img);
+
+
+            // first answers
+
+            //adding attributes 
+
+
+
+
+
+            $(document.body).on('click', '.an', function(e) {
+                $target = $(e.target).attr('value');
+                $answers.push($target);
+
+                console.log($answers);
+                cq++;
+                del();
+                if (cq <= politic.length - 1) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 60
+                    });
+                    $quest.text(politic[cq].question);
+                    $img.attr('src', politic[cq].img);
+                    newq();
+
+                } else {
+                    $('html,body').animate({
+                        scrollTop: 60
+                    });
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    console.log('game end');
+                    sort($answers);
+
+                    cq = 0;
+
+                }
+
+                function checkans(arr) {
+
+                    var answer = arr.sort((a, b) =>
+                        arr.filter(v => v === a).length -
+                        arr.filter(v => v === b).length
+                    ).pop();
+                    console.log(answer);
+
+                    switch (answer) {
+                        case "p":
+                            $('#youare').text(winner[0].title);
+                            $('#hero').attr('src', winner[0].img);
+                            break;
+                        case "o":
+                            $('#youare').text(winner[1].title);
+                            $('#hero').attr('src', winner[1].img);
+                            break;
+                        case "f":
+                            $('#youare').text(winner[2].title);
+                            $('#hero').attr('src', winner[2].img);
+                            break;
+                        case "n":
+                            $('#youare').text(winner[3].title);
+                            $('#hero').attr('src', winner[3].img);
+                            break;
+                        case "e":
+                            $('#youare').text(winner[4].title);
+                            $('#hero').attr('src', winner[4].img);
+                            break;
+                        case "h":
+                            $('#youare').text(winner[5].title);
+                            $('#hero').attr('src', winner[5].img);
+                            break;
+                        case "s":
+                            $('#youare').text(winner[6].title);
+                            $('#hero').attr('src', winner[6].img);
+                            break;
+
+                    }
+                }
+
+
+                function sort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        if (arr[i].length > 1) {
+                            arr[i] = arr[i].split("");
+                            var newarr = arr.reduce(function(a, b) {
+                                return a.concat(b);
+                            }, []);
+
+
+                        }
+                    }
+                    checkans(newarr);
+                    return newarr;
+
+
+                };
+
+
+
+            });
+
+
+
+        })
+
+        //end of politic quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>

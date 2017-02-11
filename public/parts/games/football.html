@@ -1,0 +1,310 @@
+<meta name="keywords" content="pelle, football, quiz, bojan vasilevski, game, test , history, maradona ,personality quizes, ronaldo, messi, liverpool, milan">
+<meta name="description" content="Which Football Player Are You?">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+            <body>
+                <h1 class='gametit'>Which Football Player Are You?</h1>
+                <div class="question" id='football'>
+                    <div class="quest" id='quest'>
+                        <h4 class='questions' id='questions'>First</h4>
+                    </div>
+                    <img id='image' src="../../img/football/roman.png" alt="">
+                    <div class="an answer1" id='answer1'>1</div>
+                    <div class="an answer2" id='answer2'>>2</div>
+                    <div class="an answer3" id='answer3'>>3</div>
+                    <div class="an answer4" id='answer4'>>4</div>
+                </div>
+                <div style="display:none" class="your">
+                    <h3 id='youare'>You</h3>
+                    <img align='center' class='hero' id='hero' src="" alt="">
+
+                </div>
+                <div class="fb-like" data-href="http://funquiz.xyz/parts/games/football.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-comments" data-href="http://funquiz.xyz/parts/games/football.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var football = [{
+                "question": "1.  What position do you usually play?",
+                "img": "../../img/football/pos.jpg",
+                "choices": [
+                    "Defender",
+                    "Striker",
+                    "Midfielder",
+                    "Goalkeeper"
+                ],
+                "value": ["llss", "rrmc", "mcl", "bbb"]
+
+            }, {
+                "question": "2.     How would you score a goal?",
+                "img": "../../img/football/goal.jpg",
+                "choices": [
+                    "Header",
+                    "Free kick",
+                    "Power shot outside the box",
+                    "Penalty"
+                ],
+                "value": ["rttb", "mrlcc", "c", "rrm"]
+            }, {
+                "question": "3.     What do you think when walking out on pitch?About?",
+                "img": "../../img/football/pitch.jpg",
+                "choices": [
+                    "Winning ",
+                    "Scoring",
+                    "Having fun",
+                    "The game plan"
+                ],
+                "value": ["cm", "r", "t", "bl"]
+            }, {
+                "question": "4.    What your favorite jersey number?",
+                "img": "../../img/football/jersy.jpg",
+                "choices": [
+                    "3",
+                    "7",
+                    "9",
+                    "1"
+                ],
+                "value": ["lt", "cm", "rm", "bb"]
+            }, {
+                "question": "5.     who is your idol from this retired players??",
+                "img": "../../img/football/maradona.jpg",
+                "choices": [
+                    "Maradona",
+                    "Pele",
+                    "Beckenbauer",
+                    "Zidane"
+                ],
+                "value": ["m", "rt", "l", "cb"]
+            }, {
+                "question": "6.     How would you describe your style of play?",
+                "img": "../../img/football/style.jpg",
+                "choices": [
+                    "Aggressive",
+                    "Fluid",
+                    "Disciplined",
+                    "Composed"
+                ],
+                "value": ["rc", "rm", "lb", "tt"]
+            }
+
+        ]
+        var winner = [{
+                "title": "Cristiano Ronaldo",
+                "img": "../../img/football/ronaldo.jpg"
+            }, {
+                "title": "Lionel Messi",
+                "img": "../../img/football/messi.png"
+            }, {
+                "title": "Gianluigi Buffon",
+                "img": "../../img/football/buffon.jpg"
+            }, {
+                "title": "Thiago Silva",
+                "img": "../../img/football/tiago.jpg"
+            }, {
+                "title": "Philippe Couthino",
+                "img": "../../img/football/couth.jpg"
+            }, {
+                "title": "Philipp Lahm",
+                "img": "../../img/football/lahm.jpg"
+            }
+
+
+        ]
+        var cq = 0;
+        var score = 0;
+
+        //end of football
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+            $img = $('#image');
+            $an1 = $('#answer1');
+            $an2 = $('#answer2');
+            $an3 = $('#answer3');
+            $an4 = $('#answer4');
+            // end oof config 
+            score = 0;
+            $answers = [];
+            var newarr = [];
+
+            $quest.text(football[cq].question);
+            $img.attr('src', football[cq].img);
+            $an1.text(football[cq].choices[0]);
+            $an2.text(football[cq].choices[1]);
+            $an3.text(football[cq].choices[2]);
+            $an4.text(football[cq].choices[3]);
+
+            // first answers
+            $an1.attr('value', football[cq].value[0]);
+            $an2.attr('value', football[cq].value[1]);
+            $an3.attr('value', football[cq].value[2]);
+            $an4.attr('value', football[cq].value[3]);
+            //adding attributes
+            $('.an').on('click', function(e) {
+                $target = $(e.target).attr('value');
+                $answers.push($target);
+
+                console.log($answers);
+                cq++;
+                if (cq <= 5) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 60
+                    });
+                    $quest.text(football[cq].question);
+                    $img.attr('src', football[cq].img);
+                    $an1.text(football[cq].choices[0]);
+                    $an2.text(football[cq].choices[1]);
+                    $an3.text(football[cq].choices[2]);
+                    $an4.text(football[cq].choices[3]);
+                    $an1.attr('value', football[cq].value[0]);
+                    $an2.attr('value', football[cq].value[1]);
+                    $an3.attr('value', football[cq].value[2]);
+                    $an4.attr('value', football[cq].value[3]);
+
+                } else {
+                    $('html,body').animate({
+                        scrollTop: 60
+                    });
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    console.log('game end');
+                    sort($answers);
+
+                    cq = 0;
+
+                }
+
+                function checkans(arr) {
+
+                    var answer = arr.sort((a, b) =>
+                        arr.filter(v => v === a).length -
+                        arr.filter(v => v === b).length
+                    ).pop();
+                    console.log(answer);
+
+                    switch (answer) {
+                        case "r":
+                            $('#youare').text(winner[0].title);
+                            $('#hero').attr('src', winner[0].img);
+                            break;
+                        case "m":
+                            $('#youare').text(winner[1].title);
+                            $('#hero').attr('src', winner[1].img);
+                            break;
+                        case "b":
+                            $('#youare').text(winner[2].title);
+                            $('#hero').attr('src', winner[2].img);
+                            break;
+                        case "t":
+                            $('#youare').text(winner[3].title);
+                            $('#hero').attr('src', winner[3].img);
+                            break;
+                        case "c":
+                            $('#youare').text(winner[4].title);
+                            $('#hero').attr('src', winner[4].img);
+                            break;
+                        case "l":
+                            $('#youare').text(winner[5].title);
+                            $('#hero').attr('src', winner[5].img);
+                            break;
+
+                    }
+                }
+
+
+                function sort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        if (arr[i].length > 1) {
+                            arr[i] = arr[i].split("");
+                            var newarr = arr.reduce(function(a, b) {
+                                return a.concat(b);
+                            }, []);
+
+
+                        }
+                    }
+                    checkans(newarr);
+                    return newarr;
+
+
+                };
+
+
+
+            });
+
+
+
+        })
+
+        //end of football quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>

@@ -1,0 +1,393 @@
+<meta name="keywords" content="geo, geography knowledge, quiz, bojan vasilevski, game, test , geography, see how much knows ,capitals, rivers, mountains, gess the capitals">
+<meta name="description" content="Random questions to test your geography knowledge see how much you know about capitals in the world !!">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+
+
+
+            <div class="question" id='geography'>
+                <div class="que" id='quest'>
+                    <h4 class='q' id='questions'>First</h4>
+                </div>
+                <img id='image' src="" alt="">
+
+            </div>
+            <div style="display:none" class="your">
+                <h3 id='youare'></h3>
+                <img align='center' class='hero' id='hero' src="" alt="">
+                <p id='youre'></p>
+
+            </div>
+            <div class="fb-like" data-href="http://funquiz.xyz/parts/quizzes/geography.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <div class="fb-comments" data-href="http://funquiz.xyz/parts/quizzes/geography.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var geography = [{
+            "question": "What is the capital of Australia",
+            "img": "../../img/geography/aus.jpg",
+            "choices": [
+                "Sydney",
+                "Canbera",
+                "Melbourne",
+                "Perth"
+
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "B"
+
+        }, {
+            "question": "What is the capital of Brazil",
+            "img": "../../img/geography/brazil.jpg",
+            "choices": [
+                "São Paulo",
+                "Rio de Janeiro",
+                "Brasília",
+                "Belo Horizonte"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "C"
+        }, {
+            "question": "What is the capital of Nigeria",
+            "img": "../../img/geography/nig.png",
+            "choices": [
+                "Lagos",
+                "Kano",
+                "Ibadan",
+                "Abuja"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of Serbia",
+            "img": "../../img/geography/serbia.png",
+            "choices": [
+                "Belgrad",
+                "Zagreb",
+                "Sofia",
+                "Skopje"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "A"
+        }, {
+            "question": "What is the capital of Pakistan",
+            "img": "../../img/geography/pakistan.png",
+            "choices": [
+                "Karachi",
+                "Lahore",
+                "Kabul",
+                "Islamabad"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of Sudan",
+            "img": "../../img/geography/sudan.jpg",
+            "choices": [
+                "Port Sudan",
+                "Khartoum",
+                "Rabat",
+                "Tripoli"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "B"
+        }, {
+            "question": "What is the capital of Norway",
+            "img": "../../img/geography/nord.png",
+            "choices": [
+                "Oslo",
+                "Tromso",
+                "Stockholm",
+                "Malmo"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "A"
+        }, {
+            "question": "What is the capital of Uruguay",
+            "img": "../../img/geography/uru.png",
+            "choices": [
+                "Rivera",
+                "Rosario",
+                "Montevideo",
+                "Bogota"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "C"
+        }, {
+            "question": "What is the capital of Venezuela ",
+            "img": "../../img/geography/ven.png",
+            "choices": [
+                "Lima",
+                "Valencia",
+                "Caracas",
+                "Bogota"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "C"
+        }, {
+            "question": "What is the capital of Kazakhstan ",
+            "img": "../../img/geography/kazak.png",
+            "choices": [
+                "Astana",
+                "Tashkent",
+                "Bishkek",
+                "Almaty"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "A"
+        }, {
+            "question": "What is the capital of Mongolia ",
+            "img": "../../img/geography/mongol.png",
+            "choices": [
+                "Darkhan",
+                "Karakorum",
+                "Bishkek",
+                "Ulaanbaatar"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of Nicaragua ",
+            "img": "../../img/geography/nic.png",
+            "choices": [
+                "Managua",
+                "San José",
+                "Lima",
+                "Kingston"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "A"
+        }, {
+            "question": "What is the capital of Turkey ",
+            "img": "../../img/geography/tur.png",
+            "choices": [
+                "Istanbul",
+                "Ankara",
+                "İzmir",
+                "Gaziantep"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "B"
+        }, {
+            "question": "What is the capital of Macedonia ",
+            "img": "../../img/geography/mac.png",
+            "choices": [
+                "Thessaloniki",
+                "Sofia",
+                "Bitola",
+                "Skopje"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of South Africa ",
+            "img": "../../img/geography/south.png",
+            "choices": [
+                "Antananarivo",
+                "Pretoria",
+                "Brazzaville",
+                "Luanda"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of Syria",
+            "img": "../../img/geography/syria.png",
+            "choices": [
+                "Amman",
+                "Damascus",
+                "Beirut",
+                "Aleppo"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "B"
+        }, {
+            "question": "What is the capital of Oman",
+            "img": "../../img/geography/oman.png",
+            "choices": [
+                "Muscat",
+                "Sana'a",
+                "Riyadh",
+                "Salalah"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "A"
+        }, {
+            "question": "What is the capital of Bangladesh",
+            "img": "../../img/geography/ban.png",
+            "choices": [
+                "Chittagong",
+                "Khulna",
+                "Naypyidaw",
+                "Dhaka"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "D"
+        }, {
+            "question": "What is the capital of Estonia",
+            "img": "../../img/geography/est.png",
+            "choices": [
+                "Riga",
+                "Talin",
+                "Vilnius",
+                "Narva"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "B"
+        }, {
+            "question": "What is the capital of Morocco",
+            "img": "../../img/geography/mor.jpg",
+            "choices": [
+                "Marrakech",
+                "Casablanca",
+                "Rabat",
+                "Fes"
+            ],
+            "value": ["A", "B", "C", "D"],
+            "answer": "C"
+        }]
+
+        //main varibale
+        var cq = 0;
+        var score = 0;
+        nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
+        randnum = [];
+        p = nums.length - 10;
+        u = 0;
+        while (p--) {
+            var u = Math.floor(Math.random() * (p + 1));
+            randnum.push(nums[u]);
+            nums.splice(u, 1);
+
+        }
+        $(document).ready(function() {
+            // configuring variables   
+            score = 0;
+            cq = 0;
+            $question = $('#questions');
+            $cont = $('.question');
+            $images = $("#image");
+            $qe = geography[randnum[cq]].choices;
+            $question.text(geography[randnum[cq]].question);
+            $images.attr('src', geography[randnum[cq]].img);
+
+            quest();
+            // creating qoustinos function
+            function quest() {
+                $qe = geography[randnum[cq]].choices;
+                for (d = 0; d < $qe.length; d++) {
+                    $ele = $("<div class = 'an'></div>").text($qe[d]).addClass('answer' + [d + 1]).attr("value", geography[cq].value[d]);
+                    console.log($ele);
+                    $cont.append($ele);
+
+                }
+            }
+            // deleteing question function
+            function del() {
+                $('.an').remove()
+            }
+            // on click element
+            $(document.body).on('click', ".an", function(e) {
+                $ans = geography[randnum[cq]].answer;
+                $target = $(e.target).attr('value');
+                cq++;
+                if ($target == $ans) {
+                    score += 1;
+                }
+                del();
+                if (cq <= 9) {
+                    console.log(score);
+                    $question.text(geography[randnum[cq]].question);
+                    $images.attr('src', geography[randnum[cq]].img);
+                    quest();
+                } else {
+                    console.log('game finished your score is ' + score);
+                    $(".question").css('display', 'none');
+                    $('#youare').text("Your Score is " + score + " of 10");
+                    $('.your').css("display", "block");
+                    switch (true) {
+                        case (score > 9):
+                            $('#youre').text(' Grade : A+   You possess a great knowledge, Bravo!');
+                            break
+                        case (score > 7):
+                            $('#youre').text(' Grade : B   You are smart guy/gal keep up, good job!!');
+                            break
+                        case (score > 5):
+                            $('#youre').text('Grade : C+   Youre good but still have much room for improvements');
+                            break
+                        case (score > 2):
+                            $('#youre').text(' Grade : D    You need to study more, start right now');
+                            break
+                        case (score > 0):
+                            $('#youre').text("Grade : F     huh pathetic you shouldn't play quizzes anymore");
+                            break
+                    }
+                }
+            })
+
+
+
+
+
+
+        })
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>

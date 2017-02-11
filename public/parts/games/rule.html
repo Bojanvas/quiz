@@ -1,0 +1,287 @@
+<meta name="keywords" content="leaders, heroes, alexander the great, bojan vasilevski, game, test , napoleon, ghandi,personality quizes, great peoples">
+<meta name="description" content="Which historical ruler are you? Find out now!!">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wraper">
+        <header>
+            <div class="headwrap">
+                <a href="#" class="logo" id="logo"><span style = 'color:red'>F</span><span style = 'color:green'>U</span><span style = 'color:black'>N</span> GAMES</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games">Personality<br> Quizzes</a></li>
+                    <li><a href="/quizzes">Knowledge <br> Quizzes</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapquest">
+            <h1 class='gametit'>Which historical ruler are you?</h1>
+            <div class="question">
+                <div class="quest" id='quest'>
+                    <h4 class='questions' id='questions'>First</h4>
+                </div>
+                <img class='ruleimg' src="../../img/rulers/napoleon.jpg" alt="">
+                <div class="an answer1" id='answer1'>1</div>
+                <div class="an answer2" id='answer2'>>2</div>
+                <div class="an answer3" id='answer3'>>3</div>
+                <div class="an answer4" id='answer4'>>4</div>
+            </div>
+            <div style="display:none" class="your">
+                <h3 id='youare'>You</h3>
+                <img align='center' class='hero' id='hero' src="" alt="">
+                <p id='youre'>great</p>
+            </div>
+            <div class="fb-like" data-href="http://funquiz.xyz/parts/games/rule.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <div class="fb-comments" data-href="http://funquiz.xyz/parts/games/rule.html" data-width="100%" data-numposts="2"></div>
+        </div>
+    </div>
+
+    <script>
+        var ruler = [{
+                "question": "1.     What is most important leadership quality?",
+                "img": "../../img/rulers/napoleon.jpg",
+                "choices": [
+                    "Physical strength",
+                    "Ability to Inspire",
+                    "Understanding of human suffering",
+                    "being unique and independent"
+                ],
+                "value": ['4', '3', '1', '5']
+
+            }, {
+                "question": "2.     Would you use force to achive your goals?",
+                "img": "../../img/rulers/alexander.png",
+                "choices": [
+                    "No",
+                    "Maybe",
+                    "Only when is necessary",
+                    "Yes"
+                ],
+                "value": ['0', '2', '1', '5']
+            }, {
+                "question": "3.     What do yo most value?",
+                "img": "../../img/rulers/caeser.jpg",
+                "choices": [
+                    "Adventrue",
+                    "Success",
+                    "Personal independence",
+                    "Changing the world"
+                ],
+                "value": ['3', '4', '2', '1']
+            }, {
+                "question": "4.     Is patriotism or national pride important to you?",
+                "img": "../../img/rulers/khan.jpeg",
+                "choices": [
+                    "Definitely not",
+                    "Yes",
+                    "I don`t have an opinion",
+                    "A little"
+                ],
+                "value": ['0', '4', '1', '2']
+            }, {
+                "question": "5.     Which of these are more important to you in a society?",
+                "img": "../../img/rulers/lincoln.jpg",
+                "choices": [
+                    "Peace and compassion",
+                    "Knowledge,culture and commerce",
+                    "equality for all",
+                    "Tolerance and innovativness"
+                ],
+                "value": ['0', '2', '1', '3']
+            }, {
+                "question": "6.     Which of these would you choose?",
+                "img": "../../img/rulers/gold.jpg",
+                "choices": [
+                    "Gold",
+                    "Power",
+                    "Books",
+                    "To get away whit things..."
+                ],
+                "value": ['2', '3', '1', '4']
+            }
+
+        ];
+
+
+        var winner = [{
+            "title": "Alexander the Great",
+            "img": "../../img/rulers/alex.jpg",
+            "text": "You`re Alexander of Macedon, you`re strong minded, ambitious men, you`re a true king, a king who whant to conquer the World.Alexander was the greatest king of Macedonia his legacy include the cultural diffusion of his conquested lands, he also founded some twenty cities that bore his name , most notably Alexandria in Egypt."
+
+        }, {
+            "title": "Napoleon Bonaparte",
+            "img": "../../img/rulers/nap.jpg",
+            "text": "You`re Napoleon, you`re charismatic, smart, but short(joke!), a true great leader, a leader that will chage the world forever.Napoleon rose to prominence during the French Revolution and led several successful campaign during the French Revolutionary Wars.Napoleon was Emperor of French from 1804 to 1814."
+
+        }, {
+            "title": "Mahatma Gandhi",
+            "img": "../../img/rulers/gandhi.jpg",
+            "text": "You`re Gandhi, you`re clever, strong,peaceful men who dont believe in violence and whant to change the world for better.Gandhi was preeminent lieader of the Indian independence movement in british-ruled India,Gandhi led India to independence and inspired  movemnets for civil rights across the world."
+
+        }, {
+            "title": "Abraham Lincoln",
+            "img": "../../img/rulers/abra.jpg",
+            "text": "You`re Abraham Lincoln, you`re strong, independent ruler, who can make great decisions in hard times. Abraham Lincoln led the United Stats through its Civil War -- ts bloodiest war and perhaps its greatest moral, constitutional, and political crisis.In doing so, he preserved the Union, abolished slavery, strengthened the federal government, and modernized the economy. "
+
+        }, {
+            "title": "Genghis Khan",
+            "img": "../../img/rulers/gkhan.jpg",
+            "text": "You`re Genghis Khan , you`re fearsome,  brave, a true leader of the horde, Genghis Khan born Temujin, was the founder and Great Khan of the Mongol Empire,which become the largest contiguous empire in history after his death. Genghis Khan and his empire have a fearsome reputatuion in local histories. "
+
+        }, {
+            "title": "Pericles",
+            "img": "../../img/rulers/pericles.jpg",
+            "text": "You`re Pericles , you`re influencal,  clever , a leader who reforms society for better.Pericles was a prominent and influential Greek statsman,orator and general of Athens durning the Golden age.He was descenden, through his mother, from the powerful and historically influential Alcmaedonid family. "
+
+        }]
+
+        var cq = 0;
+        var score = 0;
+
+        //end of ruler
+
+
+
+
+
+
+        $(document).ready(function() {
+            $('#submitbutton').hide();
+            cq = 0;
+            $quest = $('#questions');
+            $img = $('.ruleimg');
+            $an1 = $('#answer1');
+            $an2 = $('#answer2');
+            $an3 = $('#answer3');
+            $an4 = $('#answer4');
+            // end oof config 
+            score = 0;
+
+            $quest.text(ruler[cq].question);
+            $img.attr('src', ruler[cq].img);
+            $an1.text(ruler[cq].choices[0]);
+            $an2.text(ruler[cq].choices[1]);
+            $an3.text(ruler[cq].choices[2]);
+            $an4.text(ruler[cq].choices[3]);
+
+            // first answers
+            $an1.attr('value', ruler[cq].value[0]);
+            $an2.attr('value', ruler[cq].value[1]);
+            $an3.attr('value', ruler[cq].value[2]);
+            $an4.attr('value', ruler[cq].value[3]);
+            //adding attributes
+            $('.an').on('click', function(e) {
+                $target = $(e.target).attr('value');
+                score = score + Number($target);
+                console.log(score);
+                cq++;
+                if (cq <= 5) {
+                    $('html,body').animate({
+                        scrollTop: $('.question').offset().top - 40
+                    });
+                    $quest.text(ruler[cq].question);
+                    $img.attr('src', ruler[cq].img);
+                    $an1.text(ruler[cq].choices[0]);
+                    $an2.text(ruler[cq].choices[1]);
+                    $an3.text(ruler[cq].choices[2]);
+                    $an4.text(ruler[cq].choices[3]);
+                    $an1.attr('value', ruler[cq].value[0]);
+                    $an2.attr('value', ruler[cq].value[1]);
+                    $an3.attr('value', ruler[cq].value[2]);
+                    $an4.attr('value', ruler[cq].value[3]);
+
+                } else {
+                    check(score);
+                    cq = 0;
+                }
+
+                function check(score) {
+                    $(".question").css('display', 'none');
+                    $('.your').css("display", "block");
+                    $('body').scrollTop(1000);
+
+                    if (score >= 20) {
+
+                        $('#youare').text(winner[4].title);
+                        $('#hero').attr('src', winner[4].img);
+                        $('#youre').text(winner[4].text);
+                    } else if (score >= 17) {
+
+                        $('#youare').text(winner[0].title);
+                        $('#hero').attr('src', winner[0].img);
+                        $('#youre').text(winner[0].text);
+                    } else if (score >= 14) {
+
+                        $('#youare').text(winner[1].title);
+                        $('#hero').attr('src', winner[1].img);
+                        $('#youre').text(winner[1].text);
+                    } else if (score >= 11) {
+
+                        $('#youare').text(winner[3].title);
+                        $('#hero').attr('src', winner[3].img);
+                        $('#youre').text(winner[3].text);
+                    } else if (score >= 8) {
+
+                        $('#youare').text(winner[5].title);
+                        $('#hero').attr('src', winner[5].img);
+                        $('#youre').text(winner[5].text);
+                    } else {
+
+                        $('#youare').text(winner[2].title);
+                        $('#hero').attr('src', winner[2].img);
+                        $('#youre').text(winner[2].text);
+                    }
+                }
+            });
+
+
+
+        })
+
+        //end of ruler quizzs
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89963416-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>

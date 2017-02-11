@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 1.11px;
+    background-color: #efefef!important;
+}
+
+.wraper {
+    padding: 0.11px;
+}
+
+.wrapquest {
+    background-color: white !important;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #4286f4;
+    z-index: 1000;
+    background-color: white;
+}
+
+header .headwrap {
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    color: #4286f4;
+    font-size: 220%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.nav li a {
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.maincontainer {
+    margin: 140px auto;
+    width: 60%;
+    background-color: white;
+    height: auto;
+    border: 1px solid #4286f4;
+}
+
+.pagination .second {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.headline {
+    width: 100%;
+    border-bottom: 1px solid #4286f4;
+}
+
+.headline h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.maincontent {
+    width: 80%;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.content {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cont {
+    height: 150px;
+}
+
+.cont img {
+    float: left;
+    height: 150px;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.info {
+    float: left;
+    width: 60%;
+}
+
+.info h4 {
+    margin-top: 0;
+    color: black;
+    font-family: 'Slabo 27px', serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.info p {
+    color: black;
+    font-size: 120%;
+}
+
+.info a {
+    margin-top: 10px;
+    color: white;
+}
+
+.content a {}
+
+.content a:hover {
+    color: #4286f4;
+    text-decoration: none;
+}
+
+
+/* games begin */
+
+.gametit {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quest {
+    width: 100%;
+    background-color: #4286f4;
+    opacity: 0.9;
+    top: 50;
+    position: relative;
+}
+
+.que {
+    width: 100%;
+    opacity: 1;
+}
+
+.q {
+    margin-bottom: 0;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-size: 220%;
+    font-weight: 600;
+    font-family: 'Slabo 27px', serif;
+    border: 2px solid black;
+}
+
+.question img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 500px;
+    border-top: none;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.wrapquest {
+    margin: 100px auto;
+    width: 44%;
+    border: 2px solid #4286f4;
+    padding: 60px;
+}
+
+.questions {
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.an {
+    width: 100%;
+    color: white;
+    background-color: #4286f4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    padding: 9px;
+    border-bottom: 1px solid white;
+}
+
+.an:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.your {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40 auto;
+}
+
+.your h3 {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 700;
+    font-size: 250%;
+}
+
+.your p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 150%;
+    width: 100%;
+    margin: 29px auto;
+    border: 2px solid black;
+    font-family: 'Slabo 27px', serif;
+    padding: 20px;
+}
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 600px;
+    max-width: 100%;
+}
+
+.fb-comments {
+    margin: 0 auto;
+}
+
+
+/* end of games */
+
+@media (max-width:1380px) {
+    .question img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 350px;
+        border-top: none;
+    }
+    .q {
+        padding: 10px;
+        font-size: 180%;
+    }
+}
+
+@media (max-width:600px) {
+    .logo {
+        font-size: 149%;
+        margin-left: 5px;
+    }
+    .nav li a {
+        font-size: 110%;
+    }
+    .maincontent {
+        width: 100%;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    .maincontainer {
+        width: 100%;
+    }
+    /* content of pages */
+    .cont {
+        height: auto;
+    }
+    .info {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+    .cont img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    /* quizzes */
+    .wrapquest {
+        width: 100%;
+        padding: 20px;
+    }
+}

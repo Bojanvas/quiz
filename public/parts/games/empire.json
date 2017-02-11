@@ -1,0 +1,99 @@
+{
+    "empire": [{
+            "question": "1.     empire?",
+            "img": "img/empires/napoleon.jpg",
+            "choices": [
+                "Physical strength",
+                "Ability to Inspire",
+                "Understanding of human suffering",
+                "being unique and independent"
+            ],
+            "value": ["4", "3", "1", "5"]
+
+        }, {
+            "question": "2.     Would you use force to achive your goals?",
+            "img": "img/empires/alexander.png",
+            "choices": [
+                "No",
+                "Maybe",
+                "Only when is necessary",
+                "Yes"
+            ],
+            "value": ["0", "2", "1", "5"]
+        }, {
+            "question": "3.     What do yo most value?",
+            "img": "img/empires/caeser.jpg",
+            "choices": [
+                "Adventrue",
+                "Success",
+                "Personal independence",
+                "Changing the world"
+            ],
+            "value": ["3", "4", "2", "1"]
+        }, {
+            "question": "4.     Is patriotism or national pride important to you?",
+            "img": "img/empires/khan.jpeg",
+            "choices": [
+                "Definitely not",
+                "Yes",
+                "I don`t have an opinion",
+                "A little"
+            ],
+            "value": ["0", "4", "1", "2"]
+        }, {
+            "question": "5.     Which of these are more important to you in a society?",
+            "img": "img/empires/lincoln.jpg",
+            "choices": [
+                "Peace and compassion",
+                "Knowledge,culture and commerce",
+                "equality for all",
+                "Tolerance and innovativness"
+            ],
+            "value": ["0", "2", "1", "3"]
+        }, {
+            "question": "6.     Which of these would you choose?",
+            "img": "img/empires/gold.jpg",
+            "choices": [
+                "Gold",
+                "Power",
+                "Books",
+                "To get away whit things..."
+            ],
+            "value": ["2", "3", "1", "4"]
+        }
+
+    ],
+
+
+    "winner": [{
+        "title": "Alexander the Great",
+        "img": "img/empires/alex.jpg",
+        "text": "You`re Alexander of Macedon, you`re strong minded, ambitious men, you`re a true king, a king who whant to conquer the World.Alexander was the greatest king of Macedonia his legacy include the cultural diffusion of his conquested lands, he also founded some twenty cities that bore his name , most notably Alexandria in Egypt."
+
+    }, {
+        "title": "Napoleon Bonaparte",
+        "img": "img/empires/nap.jpg",
+        "text": "You`re Napoleon, you`re charismatic, smart, but short(joke!), a true great leader, a leader that will chage the world forever.Napoleon rose to prominence during the French Revolution and led several successful campaign during the French Revolutionary Wars.Napoleon was Emperor of French from 1804 to 1814."
+
+    }, {
+        "title": "Mahatma Gandhi",
+        "img": "img/empires/gandhi.jpg",
+        "text": "You`re Gandhi, you`re clever, strong,peaceful men who dont believe in violence and whant to change the world for better.Gandhi was preeminent lieader of the Indian independence movement in british-ruled India,Gandhi led India to independence and inspired  movemnets for civil rights across the world."
+
+    }, {
+        "title": "Abraham Lincoln",
+        "img": "img/empires/abra.jpg",
+        "text": "You`re Abraham Lincoln, you`re strong, independent empire, who can make great decisions in hard times. Abraham Lincoln led the United Stats through its Civil War -- ts bloodiest war and perhaps its greatest moral, constitutional, and political crisis.In doing so, he preserved the Union, abolished slavery, strengthened the federal government, and modernized the economy. "
+
+    }, {
+        "title": "Genghis Khan",
+        "img": "img/empires/gkhan.jpg",
+        "text": "You`re Genghis Khan , you`re fearsome,  brave, a true leader of the horde, Genghis Khan born Temujin, was the founder and Great Khan of the Mongol Empire,which become the largest contiguous empire in history after his death. Genghis Khan and his empire have a fearsome reputatuion in local histories. "
+
+    }, {
+        "title": "Pericles",
+        "img": "img/empires/pericles.jpg",
+        "text": "You`re Pericles , you`re influencal,  clever , a leader who reforms society for better.Pericles was a prominent and influential Greek statsman,orator and general of Athens durning the Golden age.He was descenden, through his mother, from the powerful and historically influential Alcmaedonid family. "
+
+    }]
+}
