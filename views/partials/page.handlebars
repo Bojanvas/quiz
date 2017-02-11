@@ -1,0 +1,28 @@
+
+
+
+ 
+{{#each games}}
+      <div class="maincontent">
+                        <div class="content">
+                              
+                                <div class="cont">
+                                    <img src="{{img}}" alt="empire">
+                                    <div class="info">
+                                        <h4>{{title}}</h4>
+                                        <p>{{text}}</p>
+                                        <a class= 'btn btn-info' href='{{href}}'>Lets Play</a>
+                                    </div>
+                                </div>
+                            
+                            
+                                </div>
+                    </div>
+
+                    
+                 
+                       {{/each}}
+                    <ul class="pagination pull-right">
+                    <li class='active' ><a href="games?page=1">1</a></li>
+                    <li ><a href="/games?page=2">2</a></li>            
+                </ul>
