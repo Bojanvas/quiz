@@ -222,9 +222,8 @@
                 del();
                 if (cq <= ancient.length - 1) {
                     console.log(score);
-                    $('.loader').fadeIn();
+                    $('.loader').show();
                     $images.attr('src', ancient[cq].img).one("load", function() {
-
                         $('.loader').fadeOut();
                         console.log('img loaded');
                     });

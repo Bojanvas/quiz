@@ -6,6 +6,11 @@
     <link rel='stylesheet' type='text/css' href='../../style.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script>
+        $(window).on("load", function() {
+            $('.loader').fadeOut();
+        });
+    </script>
 </head>
 
 <body>
@@ -57,6 +62,7 @@
                     <div class="an answer3" id='answer3'>>3</div>
                     <div class="an answer4" id='answer4'>>4</div>
                 </div>
+                <div class="loader"></div>
                 <div style="display:none" class="your">
                     <h3 id='youare'>You</h3>
                     <img align='center' class='hero' id='hero' src="" alt="">
@@ -205,7 +211,11 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(empire[cq].question);
-                    $img.attr('src', empire[cq].img);
+                    $('.loader').show();
+                    $img.attr('src', empire[cq].img).one("load", function() {
+                        $('.loader').fadeOut();
+                        console.log('img loaded');
+                    });
                     $an1.text(empire[cq].choices[0]);
                     $an2.text(empire[cq].choices[1]);
                     $an3.text(empire[cq].choices[2]);

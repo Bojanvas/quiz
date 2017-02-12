@@ -6,6 +6,11 @@
     <link rel='stylesheet' type='text/css' href='../../style.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script>
+        $(window).on("load", function() {
+            $('.loader').fadeOut();
+        });
+    </script>
 </head>
 
 <body>
@@ -53,6 +58,7 @@
                     <img id='image' src="../../img/past/roman.png" alt="">
 
                 </div>
+                <div class="loader"></div>
                 <div style="display:none" class="your">
                     <h3 id='youare'>You</h3>
                     <img align='center' class='hero' id='hero' src="" alt="">
@@ -273,7 +279,11 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(past[cq].question);
-                    $img.attr('src', past[cq].img);
+                    $('.loader').show();
+                    $img.attr('src', past[cq].img).one("load", function() {
+                        $('.loader').fadeOut();
+                        console.log('img loaded');
+                    });
                     newq();
 
                 } else {

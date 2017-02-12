@@ -349,8 +349,12 @@
                 del();
                 if (cq <= 9) {
                     console.log(score);
+                    $('.loader').show();
+                    $images.attr('src', geography[randnum[cq]].img).one("load", function() {
+                        $('.loader').fadeOut();
+                        console.log('img loaded');
+                    });
                     $question.text(geography[randnum[cq]].question);
-                    $images.attr('src', geography[randnum[cq]].img);
                     quest();
                 } else {
                     console.log('game finished your score is ' + score);
