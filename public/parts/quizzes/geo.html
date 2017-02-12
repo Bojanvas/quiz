@@ -791,9 +791,9 @@
                 del();
                 if (cq <= 9) {
                     console.log(score);
-                    $('.loader').show();
+                    $('.question').fadeOut();
                     $images.attr('src', geography[randnum[cq]].img).one("load", function() {
-                        $('.loader').fadeOut();
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     $question.text(geography[randnum[cq]].question);

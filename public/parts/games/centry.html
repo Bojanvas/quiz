@@ -208,9 +208,9 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(centry[cq].question);
-                    $('.loader').show();
+                    $('.question').fadeOut();
                     $img.attr('src', centry[cq].img).one("load", function() {
-                        $('.loader').fadeOut();
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     $an1.text(centry[cq].choices[0]);

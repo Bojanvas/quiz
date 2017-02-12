@@ -211,9 +211,9 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(empire[cq].question);
-                    $('.loader').show();
+                    $('.question').fadeOut();
                     $img.attr('src', empire[cq].img).one("load", function() {
-                        $('.loader').fadeOut();
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     $an1.text(empire[cq].choices[0]);

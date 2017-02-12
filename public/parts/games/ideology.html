@@ -277,9 +277,9 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(ideology[cq].question);
-                    $('.loader').show();
+                    $('.question').fadeOut();
                     $img.attr('src', ideology[cq].img).one("load", function() {
-                        $('.loader').fadeOut();
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     newq();

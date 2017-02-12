@@ -276,9 +276,9 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(politic[cq].question);
-                    $('.loader').show();
+                    $('.question').fadeOut();
                     $img.attr('src', politic[cq].img).one("load", function() {
-                        $('.loader').fadeOut();
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     newq();
