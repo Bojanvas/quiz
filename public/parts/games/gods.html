@@ -261,7 +261,7 @@
             $(document.body).on('click', '.an', function(e) {
                 $target = $(e.target).attr('value');
                 $answers.push($target);
-
+                $('.question').fadeOut();
                 console.log($answers);
                 cq++;
                 del();
@@ -270,9 +270,8 @@
                         scrollTop: $('.question').offset().top - 60
                     });
                     $quest.text(gods[cq].question);
-                    $('.loader').show();
                     $img.attr('src', gods[cq].img).one("load", function() {
-                        $('.loader').fadeOut("fast");
+                        $('.question').fadeIn();
                         console.log('img loaded');
                     });
                     newq();
