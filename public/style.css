@@ -264,7 +264,7 @@ header .headwrap {
 
 /* end of games */
 
-@media (max-width:1380px) {
+@media (min-width:700px) and (max-width:1380px) {
     .question img {
         display: block;
         margin: 0 auto;
@@ -278,13 +278,21 @@ header .headwrap {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
+    .wraper {
+        overflow: hidden;
+    }
+    .headwrap {
+        width: 90% !important;
+        justify-content: flex-start !important;
+    }
     .logo {
         font-size: 149%;
         margin-left: 5px;
+        margin-right: 3%;
     }
     .nav li a {
-        font-size: 110%;
+        font-size: 100%;
     }
     .maincontent {
         width: 100%;
