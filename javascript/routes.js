@@ -99,6 +99,8 @@ router.get('/page:id/active', function(req, res) {
 
 
 })
-
+router.get('/BingSiteAuth.xml', function(req, res) {
+    res.sendFile(__dirname + '/BingSiteAuth.xml');
+})
 
 module.exports = router;
