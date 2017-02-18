@@ -3,17 +3,17 @@ var express = require('express');
 var handlebars = require('handlebars');
 var mongoose = require('mongoose');
 var mongoosePaginate = require('mongoose-paginate');
-var sitemap = require('sitemap')
-var sm = sitemap.createSitemap({
+var sm = require('sitemap')
+var sitemap = sm.createSitemap({
     hostname: 'funquiz.xyz',
     cacheTime: 1000 * 60 * 24, // keep 24 hours sitemap
     url: [
-        { url: '/quizzes' },
-        { url: '/games' },
+        { url: '/quizzes/' },
+        { url: '/games/' },
         { url: '/parts/quizzes/geo.html' }
     ]
 })
-
+var xml = sitemap.toString();
 var router = express.Router();
 
 mongoose.connect('mongodb://bojan:bojan.1987@ds145039.mlab.com:45039/games');
@@ -109,14 +109,8 @@ router.get('/page:id/active', function(req, res) {
 
 
 })
-router.get('/sitemap.xml', function(req, res, next) {
-    sm.toXML(function(err, xml) {
-        if (err) {
-            return res.status(500).end();
-        }
-        res.header('Content-Type', 'aplication/xml');
-        res.send(xml);
-    })
+router.get('/sitemap.xml', function(req, res) {
+    res.sendFile(__dirname + '/sitemap.xml');
 })
 router.get('/BingSiteAuth.xml', function(req, res) {
     res.sendFile(__dirname + '/BingSiteAuth.xml');
