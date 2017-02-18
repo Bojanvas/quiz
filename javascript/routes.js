@@ -3,6 +3,16 @@ var express = require('express');
 var handlebars = require('handlebars');
 var mongoose = require('mongoose');
 var mongoosePaginate = require('mongoose-paginate');
+var sitemap = require('sitemap')
+var sm = sitemap.createSitemap({
+    hostname: 'localhost:3000',
+    cacheTime: 1000 * 60 * 24, // keep 24 hours sitemap
+    url: [
+        { url: '/quizzes' },
+        { url: '/games' },
+        { url: '/parts/quizzes/geo.html' }
+    ]
+})
 
 var router = express.Router();
 
@@ -99,6 +109,10 @@ router.get('/page:id/active', function(req, res) {
 
 
 })
+router.get('/sitemap.xml', function(req, res, next) {
+    res.sendFile(__dirname + '/sitemap.xml');
+})
+
 router.get('/BingSiteAuth.xml', function(req, res) {
     res.sendFile(__dirname + '/BingSiteAuth.xml');
 })
