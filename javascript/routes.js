@@ -110,7 +110,7 @@ router.get('/page:id/active', function(req, res) {
 
 })
 router.get('/sitemap.xml', function(req, res, next) {
-    sitemap.toXML(function(err, xml) {
+    sm.toXML(function(err, xml) {
         if (err) {
             return res.status(500).end();
         }
