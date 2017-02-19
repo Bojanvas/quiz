@@ -6,7 +6,7 @@ var mongoosePaginate = require('mongoose-paginate');
 var sm = require('sitemap')
 var sitemap = sm.createSitemap({
     hostname: 'funquiz.xyz',
-    cacheTime: 1000 * 60 * 24, // keep 24 hours sitemap
+    cacheTime: 600000, // keep 24 hours sitemap
     url: [
         { url: '/quizzes/' },
         { url: '/games/' },
@@ -110,10 +110,31 @@ router.get('/page:id/active', function(req, res) {
 
 })
 router.get('/sitemap.xml', function(req, res) {
-    res.sendFile(__dirname + '/sitemap.xml');
+    generate(res);
+
 })
 router.get('/BingSiteAuth.xml', function(req, res) {
     res.sendFile(__dirname + '/BingSiteAuth.xml');
 })
 
+function generate(res) {
+    var urls = ['/quizzes', '/games'];
+    var root_path = 'http://www.funquiz.com';
+    var priority = 0.5;
+    var freq = 'monthly';
+    var xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+    for (i in urls) {
+        xml += '<url>';
+        xml += '<loc>' + root_path + urls[i] + '</loc>';
+        xml += '<changefreq>' + freq + '</changefreq>';
+        xml += '<priority>' + priority + '</priority>';
+        xml += '</url>';
+
+        i++
+    }
+    xml += "</urlset>";
+
+    res.header('Content-Type', "text/xml");
+    res.send(xml);
+}
 module.exports = router;
