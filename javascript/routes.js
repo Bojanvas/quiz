@@ -119,7 +119,7 @@ router.get('/BingSiteAuth.xml', function(req, res) {
 
 function generate(res) {
     var urls = ['/quizzes', '/games', "/parts/quizzes/geo.html", "/parts/quizzes/ancinet.html", "/parts/quizzes/geography.html", "/parts/games/gods.html", "/parts/games/politic.html", "/parts/games/past.html", "/parts/games/football.html", "/parts/games/centry.html", "/parts/games/empire.html", "/parts/games/rule.html", "/parts/games/ideology.html"];
-    var root_path = 'http://www.funquiz.com';
+    var root_path = 'http://www.funquiz.xyz';
     var priority = 0.5;
     var freq = 'monthly';
     var xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
