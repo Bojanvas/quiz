@@ -331,6 +331,7 @@ header .headwrap {
         margin-bottom: 20px;
     }
     .maincontainer {
+        margin-top: 0px;
         width: 100%;
     }
     /* content of pages */
@@ -351,5 +352,10 @@ header .headwrap {
     .wrapquest {
         width: 100%;
         padding: 20px;
+    }
+    .social {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
     }
 }
