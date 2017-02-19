@@ -82,6 +82,37 @@ header .headwrap {
     font-weight: 600;
 }
 
+.social {
+    margin-left: 20px;
+    float: left;
+    height: 300px;
+    width: 10%;
+    background-color: white;
+    border: 1px solid #4286f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social div {
+    margin: 10px auto;
+}
+
+.social h2 {
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 600;
+}
+
+.social h3 {
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 600;
+}
+
 .maincontent {
     width: 80%;
     margin-left: 70px;
