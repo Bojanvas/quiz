@@ -16,7 +16,7 @@ var sitemap = sm.createSitemap({
 var xml = sitemap.toString();
 var router = express.Router();
 
-mongoose.connect('mongodb://bojan:bojan.1987@ds145039.mlab.com:45039/games');
+mongoose.connect(process.env.DB);
 
 
 var gameSchema = mongoose.Schema({
